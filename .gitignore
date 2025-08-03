@@ -1,0 +1,24 @@
+# Ignore secret credentials
+.env
+
+# Ignore system files
+.DS_Store
+
+# Ignore pickle/model files
+*.pkl
+*.h5
+
+# Ignore all CSV files inside data folder
+data/*.csv
+
+# Ignore virtual environments
+venv/
+.env/
+__pycache__/
+*.pyc
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore log files
+*.log
