@@ -2,9 +2,24 @@
 
 A full-stack machine learning dashboard to detect fraudulent financial transactions, built with **Streamlit**, deployed on **AWS EC2**, and integrated with **Twilio WhatsApp API** for real-time alerts.
 
+---
+
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![AWS](https://img.shields.io/badge/Hosted-AWS_EC2-orange)
+![Twilio](https://img.shields.io/badge/Alerts-Twilio_WhatsApp-brightgreen)
+
+---
+
 ## 🌐 Live Demo
 
 👉 [http://3.150.28.236:8501](http://3.150.28.236:8501)
+
+---
+
+## 🧾 Project Overview
+
+This project simulates a real-world banking scenario where financial transactions are monitored in real-time for fraud detection. Suspicious transactions trigger immediate WhatsApp alerts to the concerned authority, enabling proactive fraud mitigation.
 
 ---
 
@@ -27,6 +42,16 @@ A full-stack machine learning dashboard to detect fraudulent financial transacti
 - **Alerts**: Twilio WhatsApp API
 - **Hosting**: AWS EC2 (Ubuntu 24.04), Elastic IP
 - **Deployment**: Virtualenv + crontab for auto-start
+
+---
+
+## 🤖 Model Details
+
+- **Model Type**: Logistic Regression (Binary Classification)
+- **Dataset**: Simulated financial transactions (imbalanced dataset)
+- **Accuracy**: ~99%
+- **Preprocessing**: Scaling, Label Encoding
+- **Metrics**: Precision, Recall, ROC-AUC
 
 ---
 
@@ -67,9 +92,12 @@ TWILIO_WHATSAPP_NUMBER=whatsapp:+14155238886
 TARGET_WHATSAPP_NUMBER=whatsapp:+91xxxxxxxxxx
 ```
 
+> 🔒 **Note**: Never share your `.env` or Twilio credentials publicly. Use `.gitignore` to exclude sensitive files.
+
 ---
 
 ## 📸 Screenshot
+
 ### ✅ Screenshot – WhatsApp Alert Confirmation
 ![screenshot](screenshots/IMG_6890.PNG)
 ### 📈 Screenshot – Prediction Output
@@ -82,8 +110,6 @@ TARGET_WHATSAPP_NUMBER=whatsapp:+91xxxxxxxxxx
 ![screenshot](screenshots/Demo3.png)
 ### 🧾 Screenshot – Dashboard Page
 ![screenshot](screenshots/Demo4.png)
-
-
 
 ---
 
