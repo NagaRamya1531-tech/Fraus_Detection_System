@@ -47,7 +47,7 @@ This project simulates a real-world banking scenario where financial transaction
 
 ## 🤖 Model Details
 
-- **Model Type**: Logistic Regression (Binary Classification)
+- **Model Type**: XGBoost Classifier (Binary Classification)
 - **Dataset**: Simulated financial transactions (imbalanced dataset)
 - **Accuracy**: ~99%
 - **Preprocessing**: Scaling, Label Encoding
